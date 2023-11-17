@@ -3,24 +3,17 @@ import { useSelector } from "react-redux";
 import HomeSideBar from '../components/HomeSideBar';
 import HometopBar from '../components/HometopBar';
 import { AiOutlinePlus, AiFillCloseCircle, AiOutlineClose } from 'react-icons/ai';
-import { IoChevronBackOutline } from 'react-icons/io5'
+
 import { FiLink2 } from 'react-icons/fi'
-import { BiSolidLockAlt } from 'react-icons/bi'
-import { Link } from 'react-router-dom';
-import { IoMdSettings } from 'react-icons/io'
-import { FiMoreVertical } from 'react-icons/fi'
 import kent1 from '../assets/kent-1.jpg';
-import cus from '../assets/cus.png';
 import './Home.css'
-import noUser from '../assets/noUser.png';
 import crown from '../assets/crown.png'
 import s1 from '../assets/stole.png'
 import s2 from '../assets/s1.png'
 import s3 from '../assets/stole5.png'
-import safe from '../assets/shield.png'
+
 import Customize from '../components/customization';
 import {
-  Button,
   Modal,
   ModalBody,
 } from 'reactstrap';
@@ -32,12 +25,6 @@ import Free from '../components/Free';
 
 const Home = () => {
 
-  const images = [
-    { id: 1, src: s1 },
-    { id: 2, src: s2 }
-  ]
-
-
   const premiumRef = useRef(null);
 
   const [modal, setModal] = useState(false);
@@ -47,7 +34,6 @@ const Home = () => {
   const [kenteSash, setKenteSash] = useState(false);
   const [free, setFree] = useState(false);
   const [free2, setFree2] = useState(false);
-  const [primiumClose, setPremiumClose] = useState(false);
   const { user } = useSelector((state) => state.user);
   useEffect(() => {
     const handleClickPremium = (event) => {
@@ -135,7 +121,6 @@ const Home = () => {
                   <ModalBody>
                     <Free name='Kente Stole' />
                   </ModalBody>
-
                 </Modal>
                 <div className='absolute z-10 right-[18rem] top-[10.5rem] pl-44'>
                   <span className='text-xs font-medium text-gray-400'>Free</span>
@@ -159,7 +144,6 @@ const Home = () => {
                   <ModalBody>
                     <Free name='Graduation Stole' />
                   </ModalBody>
-
                 </Modal>
                 <div className='absolute z-10 right-[3.2rem] top-[10.7rem] ml-48'>
                   <img src={crown} alt="" className='w-5 h-5' />
@@ -173,7 +157,6 @@ const Home = () => {
                   </div>
                   <div className='w-full h-[0.03rem] bg-yellow-400'></div>
                   <a href='' className='text-gray-500 underline text-[0.95rem] mt-0.5'>Kente Sash</a>
-
                 </div>
                 <Modal
                   className='modal'
@@ -185,7 +168,6 @@ const Home = () => {
                 >
                   <ModalBody>
                     <div className='bg-white relative p-6 rounded-lg'>
-
                       <div className='flex flex-row items-center justify-between'>
                         <div className='flex flex-row items-center
                          gap-x-3 bg-[#f1f1f1] rounded-lg px-3 border border-gray-300 border-opacity-50 py-1'>
@@ -199,7 +181,6 @@ const Home = () => {
                       <KenteSash />
                     </div>
                   </ModalBody>
-
                 </Modal>
               </div>
             </div>
@@ -210,7 +191,6 @@ const Home = () => {
               toggle={
                 toggle
               }
-
             >
               <ModalBody>
                 <div className='bg-white relative p-4 rounded-lg'>
@@ -218,7 +198,6 @@ const Home = () => {
                   <Customize />
                 </div>
               </ModalBody>
-
             </Modal>
 
             <div className='template mt-5 bg-[#fff] w-full p-5 rounded'>
@@ -229,11 +208,9 @@ const Home = () => {
                   onMouseEnter={handleToggleVertical}
                   onMouseLeave={handleToggleVertical}
 
-
                   className='flex cursor-pointer flex-col gap-2 border border-yellow-400 items-center justify-center rounded-lg relative h-48 overflow-hidden transition-all duration-300 ease-linear'>
                   <img src={kent1} className='object-contain' />
                   <div className='absolute z-10  inset-0 bg-yellow-400 opacity-50 hover:opacity-30'>
-
                   </div>
                 </div>
 
@@ -243,15 +220,11 @@ const Home = () => {
                   handleToggle={
                     handleToggle
                   }
-
                 >
                   <ModalBody>
                     <PopUp />
-
                   </ModalBody>
-
                 </Modal>
-
 
 
                 <div
@@ -259,7 +232,6 @@ const Home = () => {
                   className='flex cursor-pointer flex-col gap-2 border border-yellow-400 items-center justify-center rounded-lg relative h-48 overflow-hidden'>
                   <img src={kent1} className='object-contain' />
                   <div className='absolute inset-0 bg-yellow-400 opacity-50 hover:opacity-30'>
-
                   </div>
                 </div>
                 <Modal
@@ -268,21 +240,16 @@ const Home = () => {
                   handleToggle={
                     handleToggle
                   }
-
                 >
                   <ModalBody>
                     <PopUp />
-
                   </ModalBody>
-
                 </Modal>
-
                 <div
                   onClick={handleToggle}
                   className='flex flex-col cursor-pointer gap-2 border border-yellow-400 items-center justify-center rounded-lg relative h-48 overflow-hidden'>
                   <img src={kent1} className='object-contain' />
                   <div className='absolute inset-0 bg-yellow-400 opacity-50 hover:opacity-30'>
-
                   </div>
                 </div>
               </div>
