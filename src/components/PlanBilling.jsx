@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PlanBilling = ({ active }) => {
   return (
@@ -165,14 +166,14 @@ const PlanBilling = ({ active }) => {
                     </small>
                   </h3>
 
-                  <a href="/buyPlan"
+                  <Link to="/buyPlan"
                     type="button"
                     class="inline-block w-full rounded bg-yellow-300 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-yellow-200 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200 cursor-pointer"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
                     Buy Now
-                  </a>
+                  </Link>
                 </div>
                 <div class="p-6">
                   <ol class="list-inside">
