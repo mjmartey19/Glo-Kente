@@ -12,7 +12,7 @@ import s1 from '../assets/stole.png'
 import s2 from '../assets/s1.png'
 import s3 from '../assets/stole5.png'
 
-import Customize from '../components/customization';
+import Customize from '../components/Customization';
 import {
   Modal,
   ModalBody,
