@@ -1,0 +1,9 @@
+.banner{
+    border: solid 1px white;
+    height: 330px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.742)), url('../assets/customizable-purple-white-kente-cloth-graduation-stole-721617_500x.webp');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
